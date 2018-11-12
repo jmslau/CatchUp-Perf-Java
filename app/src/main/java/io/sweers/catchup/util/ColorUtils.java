@@ -50,6 +50,8 @@ public class ColorUtils {
   public static int modifyAlpha(
       @ColorInt int color,
       @IntRange(from = 0, to = 255) int alpha) {
+      int foo = 7;
+      int bar = 7 + foo;
     return (color & 0x00ffffff) | (alpha << 24);
   }
 

@@ -4,6 +4,6 @@ clean_build {
 }
 
 incremental_build {
-	tasks = ["assembleDebug"]
+	tasks = [":app:assembleDebug"]
 	apply-non-abi-change-to = "app/src/main/java/io/sweers/catchup/util/ColorUtils.java"
 }
